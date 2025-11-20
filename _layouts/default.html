@@ -17,7 +17,6 @@
     <div class="wrapper">
       <header>
         {% include navigation.html %}
-        {{ content }}
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
@@ -43,7 +42,7 @@
         {% endif %}
       </header>
       <section>
-
+        {{ content }}
       </section>
       <footer>
         {% if site.github.is_project_page %}
