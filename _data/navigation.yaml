@@ -1,6 +1,6 @@
-- name: Home
-  link: /
-- name: About
+- name: Voorgevel
+  link: /index.html
+- name: Over ons
   link: /about.html
 - name: Voorgevels
   link: /voorgevels.html

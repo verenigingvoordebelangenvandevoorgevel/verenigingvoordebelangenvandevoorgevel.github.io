@@ -14,11 +14,12 @@ dl, dd, figure {
 /**
  * Basic styling
  */
+
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height};
-  // font-family: 'Crimson text', serif;
+  //font-family: 'Crimson text', serif;
   font-family: 'IBM Plex Mono', monospace;
   color: $text-color;
   background-color: $background-color;
@@ -74,8 +75,6 @@ figcaption {
   font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
@@ -85,17 +84,22 @@ figcaption {
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #333333;
+   background-color: #4E36E7;
+   color: #CFE736;
    top: 0;
+   border-style: solid none solid none;
+   border-width: thick;
  }
 
  ul li {
   float: left;
+  color: #CFE736;
+  width:25%;
  }
 
  ul li a {
   display: block;
-  color: white;
+  color: #CFE736;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -108,6 +112,7 @@ figcaption {
 /**
  * Headings
  */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
@@ -124,14 +129,7 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  &:visited {
-    color: black;
-  }
 
-  &:hover {
-    color: green;
-    // text-decoration: underline;
-  }
 
   .social-media-list &:hover {
     text-decoration: none;

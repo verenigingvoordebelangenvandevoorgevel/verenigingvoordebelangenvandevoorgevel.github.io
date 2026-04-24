@@ -1,14 +1,37 @@
 ---
-layout: 
-title: Voorgevels
+layout: default
+title: Deurtegels
 ---
-<h1>Latest Posts</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+<div style="padding-left:10px; padding-right:10px;">
+<div class='w3-col s12 m6 l3' style='padding-left:10px;padding-right:10px;'>
+  {% for image in site.static_files  %}
+    {% if image.path contains 'img/deurtegels/Column1' %}
+      <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="padding-bottom:10px; padding-top:10px; border-bottom-style: solid; border-width: medium;" />
+    {% endif %}
   {% endfor %}
-</ul>
+</div>
+
+<div class='w3-col s12 m6 l3' style='padding-left: 10px;  padding-right:10px'>
+  {% for image in site.static_files  %}
+    {% if image.path contains 'img/deurtegels/Column2' %}
+      <img src="{{ site.baseurl }}{{ image.path }}" alt="image"  style="padding-bottom:10px; padding-top:10px; border-bottom-style: solid; border-width: medium;" />
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class='w3-col s12 m6 l3' style='padding-left:  10px; padding-right:10px'>
+  {% for image in site.static_files  %}
+    {% if image.path contains 'img/deurtegels/Column3' %}
+      <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="padding-bottom:10px; padding-top:10px; border-bottom-style: solid; border-width: medium;" />
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class='w3-col s12 m6 l3' style='padding-left:10px;  padding-right:10px;'>
+  {% for image in site.static_files  %}
+    {% if image.path contains 'img/deurtegels/Column4' %}
+      <img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="padding-bottom:10px; padding-top:10px; border-bottom-style: solid; border-width: medium;" />
+    {% endif %}
+  {% endfor %}
+</div>
+</div>
